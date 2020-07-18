@@ -407,6 +407,8 @@
     text-align: center;
     padding: 52px 20px 31px;
     min-height: 400px;
+    width: 100%;
+    transition: all .3s;  
     &:hover{
       box-shadow: 3px 3px 20px rgba(50, 50, 50, 0.25);
       border-radius: 3px;
@@ -437,7 +439,11 @@
   }
   &__item-wrapper{
     position: relative;
-    width: 271px;    
+    width: 271px;
+    transition: all .3s;
+    &.products__item-wrapper--list{
+      width: 100%;
+    }
     &.products__item-not-available .products__item-price {
       display: none;
     }
@@ -534,6 +540,8 @@
     color: $gray;
     padding: 14px 0 25px;
     font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
   }
   &__item-price{
     @extend %barlow-bold;
@@ -719,6 +727,8 @@
     }
   }
   &__filter-btn{
+    display: flex;
+    align-items: center;
     & button{
       background-color: transparent;
       border: none;
@@ -731,12 +741,19 @@
     }
   }
   &__filter-btngrid{
-    color: #000;
     width: 26px;
     height: 21px;
   }
   &__filter-btnline{
-    color: #000;
+    width: 25px;
+    height: 19px;
+  }
+  &__filter-button {
+    opacity: .3;
+    outline: none;
+    &--active{
+      opacity: 1;
+    }
   }
   &__inner{
     display: flex;
@@ -765,6 +782,7 @@
     line-height: 17px;
     color: $gray;
     margin-right: 34px;
+    padding: 7px 10px 7px 20px;
   }
 }
 

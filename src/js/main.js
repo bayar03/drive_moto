@@ -35,5 +35,17 @@ $(function () {
 
   $(".js-range-slider").ionRangeSlider({
   });
+
+  $('.catalog__filter-btngrid').on('click', function () {
+    $(this).addClass('catalog__filter-button--active');
+    $('.catalog__filter-btnline').removeClass('catalog__filter-button--active');
+    $('.products__item-wrapper').removeClass('products__item-wrapper--list');
+  });
+
+  $('.catalog__filter-btnline').on('click', function () {
+    $(this).addClass('catalog__filter-button--active');
+    $('.catalog__filter-btngrid').removeClass('catalog__filter-button--active');
+    $('.products__item-wrapper').addClass('products__item-wrapper--list');
+  });
     
 });
