@@ -1199,6 +1199,72 @@
   }
 }
 
+.product{
+  &__card-inner{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__card-img-box{
+    width: 500px;
+    padding-top: 64px;
+    text-align: center;
+  }
+  &__card-content{
+    width: 570px;
+  }
+  &__card-old{
+    @extend %barlow-regular;
+    font-size: 30px;
+    line-height: 36px;
+    color: rgba($gray, .6);
+  }
+  &__card-new{
+    @extend %barlow-bold;
+    font-size: 40px;
+    line-height: 48px;
+    color: $gray;
+  }
+  &__card-link{
+    font-size: 15px;
+    line-height: 18px;
+    color: $blue;
+  }
+  &__card-content{
+
+  }
+  &__card-title{
+    @extend %sf-bold;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  &__card-code{
+    font-size: 15px;
+    line-height: 18px;
+    color: rgba($gray, .6);
+  }
+  &__card-buttons{
+
+  }
+  &__card-icon-favorite{
+
+  }
+  &__card-icon-comparsion{
+
+  }
+  &__card-tabs{
+
+  }
+  &__card-tab{
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba($gray, .6);
+    &.tab--active {
+      color: rgba($gray, 1);
+      background-color: transparent;
+    }
+  }
+}
+
 
 
 @import"media";

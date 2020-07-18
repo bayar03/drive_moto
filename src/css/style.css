@@ -14,12 +14,12 @@ body, .aside__filter-tab, .aside__filter-content-more-btn, .irs--flat .irs-min::
   font-weight: 600;
 }
 
-.header__top-inner, .sale__item-title, .search__content-btn, .tab--active, .products__items-notify-text, .footer__top-title, .catalog__title, .btn__checked-text, .btn__checked .aside__filter-content-label {
+.header__top-inner, .sale__item-title, .search__content-btn, .tab--active, .products__items-notify-text, .footer__top-title, .catalog__title, .btn__checked-text, .btn__checked .aside__filter-content-label, .product__card-title {
   font-family: 'SFProDisplay-Bold', sans-serif;
   font-weight: 700;
 }
 
-.sale__item-price-old, .jq-selectbox__select, .irs--flat .irs-min, .irs--flat .irs-max, .pagination__item {
+.sale__item-price-old, .jq-selectbox__select, .irs--flat .irs-min, .irs--flat .irs-max, .pagination__item, .product__card-old {
   font-family: 'Barlow', sans-serif;
   font-weight: 400;
 }
@@ -29,7 +29,7 @@ body, .aside__filter-tab, .aside__filter-content-more-btn, .irs--flat .irs-min::
   font-weight: 600;
 }
 
-.sale__item-price-new, .sale__item-footer span, .categories__item-title, .products__title, .products__item-price {
+.sale__item-price-new, .sale__item-footer span, .categories__item-title, .products__title, .products__item-price, .product__card-new {
   font-family: 'Barlow', sans-serif;
   font-weight: 700;
 }
@@ -7588,4 +7588,63 @@ body {
 
 .pagination__item a {
   display: block;
+}
+
+.product__card-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.product__card-img-box {
+  width: 500px;
+  padding-top: 64px;
+  text-align: center;
+}
+
+.product__card-content {
+  width: 570px;
+}
+
+.product__card-old {
+  font-size: 30px;
+  line-height: 36px;
+  color: rgba(47, 48, 53, 0.6);
+}
+
+.product__card-new {
+  font-size: 40px;
+  line-height: 48px;
+  color: #2F3035;
+}
+
+.product__card-link {
+  font-size: 15px;
+  line-height: 18px;
+  color: #1C62CD;
+}
+
+.product__card-title {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.product__card-code {
+  font-size: 15px;
+  line-height: 18px;
+  color: rgba(47, 48, 53, 0.6);
+}
+
+.product__card-tab {
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(47, 48, 53, 0.6);
+}
+
+.product__card-tab.tab--active {
+  color: #2f3035;
+  background-color: transparent;
 }
