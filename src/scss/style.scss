@@ -1200,6 +1200,9 @@
 }
 
 .product{
+  &__card{
+    margin-bottom: 80px;
+  }
   &__card-inner{
     display: flex;
     justify-content: space-between;
@@ -1208,60 +1211,139 @@
     width: 500px;
     padding-top: 64px;
     text-align: center;
-  }
-  &__card-content{
-    width: 570px;
-  }
+    position: relative;
+    &::before{
+      font-size: 15px;
+      line-height: 18px;
+      letter-spacing: 0.12em;
+      padding: 13px 26px;
+      border-radius: 3px;
+    }
+  }  
   &__card-old{
+    display: inline-block;
     @extend %barlow-regular;
     font-size: 30px;
-    line-height: 36px;
+    line-height: 44px;
     color: rgba($gray, .6);
+    background-image: url(../images/old-line.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   &__card-new{
     @extend %barlow-bold;
     font-size: 40px;
     line-height: 48px;
     color: $gray;
+    margin-bottom: 17px;
   }
   &__card-link{
     font-size: 15px;
     line-height: 18px;
     color: $blue;
+    border-bottom: 1px solid $blue;
   }
   &__card-content{
-
-  }
+    width: 570px;
+  }  
   &__card-title{
     @extend %sf-bold;
     font-size: 30px;
     line-height: 36px;
+    margin-bottom: 10px;
   }
   &__card-code{
     font-size: 15px;
     line-height: 18px;
     color: rgba($gray, .6);
+    margin-bottom: 22px;
   }
   &__card-buttons{
-
+    margin-bottom: 50px;
   }
-  &__card-icon-favorite{
-
-  }
-  &__card-icon-comparsion{
-
-  }
-  &__card-tabs{
-
+  &__card-buttons a{
+    &+ a{
+      margin-left: 30px;
+    }
   }
   &__card-tab{
     font-size: 20px;
     line-height: 24px;
     color: rgba($gray, .6);
+    padding-right: 17px;
+    margin-bottom: 5px;
+    & + .product__card-tab{
+      padding-left: 17px;
+    }
     &.tab--active {
+      @extend %sf-bold;
       color: rgba($gray, 1);
       background-color: transparent;
+      border-bottom: 2px solid $blue;
+      border-radius: 0;
+      padding-bottom: 5px;
     }
+  }
+  &__card-list{
+    margin-bottom: 20px;
+  }
+  &__card-item{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0 6px;
+    border-bottom: 1px solid rgba($gray, .1);
+  }
+  &__card-item-left{
+    padding-right: 15px;
+  }
+  &__card-item-right{
+    width: 125px;
+  }
+  &__card-more{
+    font-size: 14px;
+    line-height: 17px;
+    display: inline-block;
+    border-bottom: 1px solid $blue;
+    color: $blue;
+    margin-bottom: 45px;
+  }
+  &__card-btn button{
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: $blue;
+    padding: 17px 53px;
+    border-radius: 3px;
+    border: none;
+    cursor: pointer;
+  } 
+}
+
+.card{
+  &__tabs{
+    & .tabs{
+      display: flex;
+      justify-content: space-around;
+      padding: 23px 0;
+      background-color: #F0F0F4;
+      margin-bottom: 50px;
+    }
+  }
+  &__tab{
+    color: rgba($gray, .6);
+    &.tab--active{
+      background-color: transparent;
+      color: rgba($gray, 1);
+      border-bottom: 2px solid $blue;
+      border-radius: 0;
+      padding-bottom: 5px;
+    }
+  }
+  &__list-item{
+    display: flex;
+    justify-content: space-between;
   }
 }
 

@@ -47,5 +47,12 @@ $(function () {
     $('.catalog__filter-btngrid').removeClass('catalog__filter-button--active');
     $('.products__item-wrapper').addClass('products__item-wrapper--list');
   });
+
+  $(".rate-yo").rateYo({
+    normalFill: "#C4C4C4",
+    ratedFill: "#1C62CD",
+    spacing: "7px",
+    starWidth: "23px"
+  });
     
 });

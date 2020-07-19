@@ -29,7 +29,8 @@ gulp.task('css', function() {
         'node_modules/animate.css/animate.css',
         'node_modules/jquery-form-styler/dist/jquery.formstyler.css',
         'node_modules/jquery-form-styler/dist/jquery.formstyler.theme.css',
-        'node_modules/ion-rangeslider/css/ion.rangeSlider.css'
+        'node_modules/ion-rangeslider/css/ion.rangeSlider.css',
+        'node_modules/@rateyo/jquery/lib/iife/jquery.rateyo.css'
     ])
         .pipe(concat('_libs.scss'))
         .pipe(gulp.dest('src/scss'))
@@ -50,7 +51,8 @@ gulp.task('js', function() {
     return gulp.src([
         'node_modules/slick-carousel/slick/slick.js',
         'node_modules/jquery-form-styler/dist/jquery.formstyler.js',
-        'node_modules/ion-rangeslider/js/ion.rangeSlider.js'
+        'node_modules/ion-rangeslider/js/ion.rangeSlider.js',
+        'node_modules/@rateyo/jquery/lib/iife/jquery.rateyo.js'
 
     ])
         .pipe(concat('libs.min.js'))
