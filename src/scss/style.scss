@@ -35,6 +35,9 @@
 }
 
 .menu{
+  &__btn{
+    display: none;
+  }
   &__item{
     display: inline-block;
     & + .menu__item {
@@ -75,6 +78,24 @@
       }
     }
   }
+  &__mobile-list{
+    width: 243px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .15);
+  }
+  &__mobile-item{
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+  }
+  &__modile-link{
+    display: block;
+    padding-left: 53px;
+    padding-top: 36px;
+  }
+  &__modile-img{
+    position: absolute;
+    left: 11px;
+    bottom: 0;
+  }
 }
 
 .user{
@@ -101,8 +122,8 @@
     background-color: $blue;
     border-radius: 50%;
     text-align: center;
-    bottom: 0;
-    right: -14px;
+    bottom: -2px;
+    right: -13px;
   }
 }
 
@@ -809,7 +830,7 @@
       }
     }
   }  
-  &__filter-item-drop,{
+  &__filter-item-drop{
     margin: 40px 0;
   }
   &__filter-item-list{
@@ -1058,7 +1079,7 @@
     margin-top: -15px;
     & .irs{
       &-min,
-      &-max,{
+      &-max{
         top: 55px;
         padding: 0;
         color: $gray;
@@ -1323,13 +1344,15 @@
 
 .card{
   &__tabs{
-    & .tabs{
-      display: flex;
-      justify-content: space-around;
-      padding: 23px 0;
-      background-color: #F0F0F4;
-      margin-bottom: 50px;
-    }
+    margin-bottom: 100px;
+  }
+  &__tabs-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 22px 0;
+    background-color: #F0F0F4;
+    margin-bottom: 50px;
   }
   &__tab{
     color: rgba($gray, .6);
@@ -1341,12 +1364,87 @@
       padding-bottom: 5px;
     }
   }
+  &__top-line{
+    margin-bottom: 50px;
+  }
+  &__label-search{
+    font-size: 17px;
+    line-height: 20px;
+    color: rgba($gray, .7);
+    margin-right: 155px;
+    
+  }
+  &__input-search{
+    margin-left: 17px;
+    background: #F0F0F4;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    padding: 9px 37px 9px 17px;
+    width: 315px;
+    position: relative;
+    background-image: url(../images/Search.svg);
+    background-repeat: no-repeat;
+    background-position: 95% 50%;   
+  }
+  &__label-pickup{
+    font-size: 17px;
+    line-height: 20px;
+    color: rgba($gray, .7);
+    & + .card__label-pickup{
+      margin-left: 54px;
+    }
+  }
   &__list-item{
+    display: flex;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba($gray, .1);
+    font-size: 16px;
+    line-height: 24px;
+    color: rgba($gray, .7);
+  }
+  &__list-itemtitle{
+    color: rgba($gray, 1);
+    font-size: 20px;
+    line-height: 24px;
+    border-bottom: none;
+  }
+  &__list-address{
+    width: 220px;
+    margin-right: 80px;
+  }
+  &__list-workhours{
+    width: 160px;
+    margin-right: 90px;
+  }
+  &__list-dayclock{
     display: flex;
     justify-content: space-between;
   }
+  &__list-avialable{
+    width: 140px;
+    margin-right: 60px;
+  }
+  &__list-num{
+    width: 105px;
+
+  }
+  &__list-btn{
+    margin-left: auto;
+    & button{
+      background: $blue;
+      border-radius: 3px;
+      border: none;
+      outline: none;
+      font-size: 13px;
+      line-height: 16px;
+      letter-spacing: 0.12em;
+      color: #fff;
+      padding: 10px 40px;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+  }
 }
-
-
 
 @import"media";
