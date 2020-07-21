@@ -3,7 +3,15 @@ $(function () {
   $('.banner__section-slider').slick({
     dots: true,
     prevArrow: '<buttom class="banner__section-slider-btn banner__section-slider-btnprev"><img src="images/arrow-left.svg" alt="arrow-left"></buttom>',
-    nextArrow: '<buttom class="banner__section-slider-btn banner__section-slider-btnnext"><img src="images/arrow-right.svg" alt="arrow-right"></buttom>'
+    nextArrow: '<buttom class="banner__section-slider-btn banner__section-slider-btnnext"><img src="images/arrow-right.svg" alt="arrow-right"></buttom>',
+    responsive:[
+      {
+        breakpoint: 969,
+        settings: {
+          arrows: false
+        }
+      }
+    ]
   });
 
   $('.tab').on('click', function (e) {
@@ -53,6 +61,10 @@ $(function () {
     ratedFill: "#1C62CD",
     spacing: "7px",
     starWidth: "23px"
+  });
+
+  $('.menu__btn').on('click', function(){
+    $('.menu__mobile-list').toggleClass('menu__mobile-list--active')
   });
     
 });
