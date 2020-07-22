@@ -409,6 +409,19 @@
 
 .products{
   margin-bottom: 80px;
+  &__slider{
+    & .slick-dots{
+      bottom: -30px;
+      & .slick-active{
+        & button{
+          background-color: $blue;
+        }
+      }
+      & button{
+        background-color: #C4C4C4;
+      }
+    }
+  }
   &__slider-btn {
     position: absolute;
     top: 50%;
@@ -612,6 +625,9 @@
 
 .banner{
   margin-bottom: 80px;
+  &__link-imgmobile{
+    display: none;
+  }
 }
 
 .footer{

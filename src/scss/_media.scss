@@ -1,3 +1,11 @@
+@media(max-width: 1300px){
+  .products{
+    &__more{
+      margin-top: 60px;
+    }
+  }
+}
+
 @media(max-width: 1200px){
   .banner{
     &__section-inner{
@@ -14,6 +22,11 @@
   .categories{
     &__inner{
       justify-content: space-around;
+    }
+  }
+  .banner{
+    &__link img{
+      width: 100%;
     }
   }
 }
@@ -133,6 +146,18 @@
       height: 24px;
       right: 8px;
       top: 13px;
+    }
+  }
+  .banner {
+    &__link{
+      width: 100%;
+    }
+    &__link-imgdecktop {
+      display: none;
+    }
+    &__link-imgmobile{
+      display: block;
+      background-size: cover;
     }
   }
 }

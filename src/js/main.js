@@ -30,8 +30,42 @@ $(function () {
 
   $('.products__slider').slick({
     slidesToShow: 4,
+    slidesToScroll: 1,
     prevArrow: '<buttom class="products__slider-btn products__slider-btnprev"><img src="images/arrow-black-left.svg" alt="arrow-left"></buttom>',
-    nextArrow: '<buttom class="products__slider-btn products__slider-btnnext"><img src="images/arrow-black-right.svg" alt="arrow-right"></buttom>'
+    nextArrow: '<buttom class="products__slider-btn products__slider-btnnext"><img src="images/arrow-black-right.svg" alt="arrow-right"></buttom>',
+    responsive: [
+      {
+        breakpoint: 1301,
+        settings: {
+          arrows: false,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 1201,
+        settings: {
+          arrows: false,
+          dots: true,
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 870,
+        settings: {
+          arrows: false,
+          dots: true,
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 590,
+        settings: {
+          arrows: false,
+          dots: true,
+          slidesToShow: 1
+        }
+      }
+    ]
   });
 
   $('.filter-style').styler();
