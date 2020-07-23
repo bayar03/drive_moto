@@ -100,5 +100,14 @@ $(function () {
   $('.menu__btn').on('click', function(){
     $('.menu__mobile-list').toggleClass('menu__mobile-list--active')
   });
+
+  $('.footer__top-title').on('click', function() {
+    $(this).next().slideToggle();   
+    $(this).toggleClass('footer-title--active');   
+  });
+  
+  
+  
+
     
 });
