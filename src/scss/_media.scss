@@ -29,6 +29,11 @@
       width: 100%;
     }
   }
+  .catalog{
+    &__inner-list{
+      justify-content: space-around;
+    }
+  }
 }
 
 @media(max-width: 1100px) {
@@ -42,6 +47,11 @@
       &+.menu__item {
         padding-left: 20px;
       }
+    }
+  }
+  .card{
+    &__label-search{
+      margin-right: 0;
     }
   }
   
@@ -109,7 +119,42 @@
       width: 1000px;      
     }
   }
+
+  .breadcrumbs{
+    &__inner{
+      overflow-x: scroll;
+    }
+    &__list{
+      width: 1000px;
+    }
+  }
+  .catalog{
+    &__filter-itemsinner{
+      overflow-x: scroll;
+    }
+    &__filter-items{
+      width: 1000px;
+    }
+  }
   
+  .product{
+    &__card-inner{
+      flex-wrap: wrap;
+    }
+    &__card-img-box{
+      width: 100%;
+    }
+    &__card-tabs{
+      display: none;
+    }
+    &__card-content{
+      order: -1;
+    }
+    &__card-btnmobile{
+      display: block;
+      margin-top: 40px;
+    }
+  }
 }
 
 @media(max-width: 940px){
@@ -120,6 +165,17 @@
     }
     &__top-item{
       margin-bottom: 25px;
+    }
+  }
+  .catalog{
+    &__filter{
+      display: block;
+    }
+    &__filter-btn{
+      margin-top: 30px;
+    }
+    &__filter-btn button{
+      display: none;
     }
   }
 }
@@ -172,7 +228,36 @@
       background-size: cover;
     }
   }
-  
+  .catalog{
+    &__inner{
+      flex-wrap: wrap;
+    }
+  }
+  .aside {
+    &__btn {
+      display: block;
+      text-transform: uppercase;
+      font-weight: 700;
+      text-align: center;
+      padding: 15px 0 50px;
+      width: 100%;
+    }
+    &__filter {
+      display: none;
+    }
+  }
+  .product{
+    &__card-img{
+      width: 100%;
+    }
+    &__card-title{
+      font-size: 20px;
+      line-height: 24px;
+    }
+    &__card-buttons a+a{
+      margin-left: 10px;
+    }
+  }  
 }
 
 @media(max-width: 540px){
@@ -213,6 +298,7 @@
       color: #7F7F7F;
       padding: 15px 0;
       position: relative;
+      pointer-events: auto;
       &::after{
         content: '';
         position: absolute;
@@ -250,6 +336,12 @@
   .categories {
     &__item {
       padding: 20px 10px 16px;
+    }
+  }
+
+  .pagination{
+    &__item{
+      margin: 0;
     }
   }
 }

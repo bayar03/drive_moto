@@ -704,6 +704,9 @@
       width: 250px;
     }
   }
+  &-title{
+    pointer-events: none;
+  }
 }
 
 .social{
@@ -836,6 +839,9 @@
 }
 
 .aside{
+  &__btn{
+    display: none;
+  }
   &__filter-tabs{
     display: flex;
     justify-content: space-between;    
@@ -1355,6 +1361,9 @@
     border-bottom: 1px solid $blue;
     color: $blue;
     margin-bottom: 45px;
+  }
+  &__card-btnmobile{
+    display: none;
   }
   &__card-btn button{
     font-size: 14px;
