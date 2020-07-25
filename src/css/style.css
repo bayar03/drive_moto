@@ -8072,18 +8072,6 @@ body {
   .banner__section-slider-item {
     text-align: center;
   }
-  .search__inner {
-    overflow-x: scroll;
-  }
-  .search__tabs {
-    width: 1000px;
-  }
-  .breadcrumbs__inner {
-    overflow-x: scroll;
-  }
-  .breadcrumbs__list {
-    width: 1000px;
-  }
   .catalog__filter-itemsinner {
     overflow-x: scroll;
   }
@@ -8129,6 +8117,12 @@ body {
   }
   .catalog__filter-btn button {
     display: none;
+  }
+  .tabs__overflow {
+    overflow-x: scroll;
+  }
+  .tabs__mobile {
+    width: 1000px;
   }
 }
 

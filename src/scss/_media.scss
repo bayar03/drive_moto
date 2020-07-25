@@ -110,24 +110,7 @@
       text-align: center;
     }
   }
-
-  .search{
-    &__inner{
-      overflow-x: scroll;
-    }
-    &__tabs{
-      width: 1000px;      
-    }
-  }
-
-  .breadcrumbs{
-    &__inner{
-      overflow-x: scroll;
-    }
-    &__list{
-      width: 1000px;
-    }
-  }
+  
   .catalog{
     &__filter-itemsinner{
       overflow-x: scroll;
@@ -136,7 +119,6 @@
       width: 1000px;
     }
   }
-  
   .product{
     &__card-inner{
       flex-wrap: wrap;
@@ -176,6 +158,15 @@
     }
     &__filter-btn button{
       display: none;
+    }
+  }
+
+  .tabs{
+    &__overflow{
+      overflow-x: scroll;
+    }
+    &__mobile{
+      width: 1000px;
     }
   }
 }
